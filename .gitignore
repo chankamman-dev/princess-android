@@ -1,0 +1,11 @@
+# Build outputs
+cloud/build/
+cloud/.gradle/
+tools/ptool/bin/
+tools/ptool/obj/
+tools/pctest/out/
+*.apk
+*.keystore
+*.jks
+tools/local.env
+shots/launcher-login.png
