@@ -1,6 +1,8 @@
 # Magical Princess 原生 Android 移植：交接
 
-GitHub：私有仓库 https://github.com/chankamman-dev/princess-android（main）。仓库里有游戏图标、启动页背景（art/）和游戏截图（shots/），只能保持私有；构建产物（cloud/build、ptool/obj、pctest/out、apk）不入库，工作目录里的游戏数据也不在仓库里。
+GitHub：**公开**仓库 https://github.com/chankamman-dev/princess-android（main，只有清理过的提交，作者用 noreply 邮箱）；完整开发历史在私有的 princess-android-private。本地 remote：`origin` = 私有、`public` = 公开；本地 `main` 跟的是私有历史，`public-main` 跟公开仓库。往公开仓库更新：`git checkout public-main && git checkout main -- . && git commit && git push public public-main:main`，再切回 main。
+
+公开仓库里不能出现：Steam 账号名 / SteamID、设备序列号、带 Windows 用户名的路径、个人邮箱、没打码的登录二维码。本机路径和设备序列号放在不入库的 `tools/local.env`（模板 `tools/local.env.example`），`shots/launcher-login.png` 不入库。构建产物（cloud/build、ptool/obj、pctest/out、apk）和工作目录里的游戏数据也不在仓库里。
 
 **目录布局（2026-11-07 整理后）**
 - 源码（本仓库）：`G:\ai\android-recompile\princess-android`（原 `G:\ai liabary\princess-android`）。
